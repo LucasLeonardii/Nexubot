@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Conectar ao Novo Pantanal</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu;display:grid;place-items:center;min-height:100vh;margin:0;padding:16px}
+    .card{max-width:640px;padding:24px;border:1px solid #e5e7eb;border-radius:14px;box-shadow:0 6px 24px rgba(0,0,0,.08)}
+    .btn{display:inline-block;padding:12px 16px;border-radius:10px;text-decoration:none;border:1px solid #111;margin-right:8px}
+    .muted{opacity:.8}
+    pre{padding:12px;border:1px dashed #9ca3af;border-radius:10px;overflow:auto}
+  </style>
+  <body>
+    <div class="card">
+      <h1>Conectar ao Novo Pantanal</h1>
+      <p class="muted">Se o navegador pedir confirmação, permita abrir o RedM.</p>
+      <p>
+        <a class="btn" id="open">Abrir no RedM agora</a>
+        <a class="btn" href="https://cfx.re/join" target="_blank" rel="noopener">Tenho problemas? (cfx.re)</a>
+      </p>
+      <p>Se não abrir automaticamente, copie este comando e cole no <b>F8</b> do RedM:</p>
+      <pre>connect novopantanal.com.br</pre>
+      <p>Ou cole no <b>Executar</b> do Windows (Win+R):</p>
+      <pre>redm://connect/novopantanal.com.br</pre>
+    </div>
+
+    <script>
+      const deeplink = "redm://connect/novopantanal.com.br";
+      function tryOpen() { window.location.href = deeplink; }
+      // tenta abrir automaticamente após 600ms
+      setTimeout(tryOpen, 600);
+      // botão manual
+      document.getElementById('open').addEventListener('click', tryOpen);
+    </script>
+  </body>
+</html>
