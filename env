@@ -1,49 +1,49 @@
 ################################################################################
 # 🔐 INFORMAÇÕES PRINCIPAIS DO BOT
 ################################################################################
-DISCORD_TOKEN=MTQzMzgwODM3MjA1MzgzNTk1Nw.G1BK_2.bObCNJ36tfRFm-oGFdEQeuYSTiLOtkQVuDa680    # Token secreto do bot (NUNCA compartilhe)
-CLIENT_ID=1433808372053835957                               # ID do bot
-GUILD_ID=1423698574319026279                                # ID do servidor principal (onde tudo acontece)
+DISCORD_TOKEN=    # Token secreto do bot (NUNCA compartilhe)
+CLIENT_ID=                               # ID do bot
+GUILD_ID=                                # ID do servidor principal (onde tudo acontece)
 
 ################################################################################
 # ✅ ALLOWLIST (sistema de perguntas e aprovação)
 ################################################################################
-ALLOWLIST_CHANNEL_ID=1423698575564607556                    # Canal onde o painel da allowlist é publicado
-APPROVED_CHANNEL_ID=1423698575845753004                     # Canal onde aparecem as aprovações
-REJECTED_CHANNEL_ID=1423698575845753005                     # Canal onde aparecem as reprovações
-LOG_CHANNEL_ID=1423698575564607557                          # Canal de log com resumo e respostas da allowlist
+ALLOWLIST_CHANNEL_ID=                    # Canal onde o painel da allowlist é publicado
+APPROVED_CHANNEL_ID=                     # Canal onde aparecem as aprovações
+REJECTED_CHANNEL_ID=                     # Canal onde aparecem as reprovações
+LOG_CHANNEL_ID=                          # Canal de log com resumo e respostas da allowlist
 DELETE_THREAD_ON_FINISH=false                               # true: apaga thread ao terminar / false: espera decisão da staff
 TIME_PER_Q=180                                              # Tempo por pergunta (em segundos)
 THREAD_ARCHIVE_MIN=60                                       # Tempo para autoarquivar threads (em minutos)
-RULES_URL=https://novopantanal.com.br/regras                # Link das regras mostrado no painel
+RULES_URL=                # Link das regras mostrado no painel
 MIN_SCORE=2                                                 # Nota mínima para aprovação (opcional, se usar pontuação)
 
 # Cargos aplicados automaticamente quando a allowlist é aprovada
-ALLOWLIST_APPROVED_ROLE_ID=1423698574729809942              # Cargo dado quando aprovado
-ALLOWLIST_REMOVE_ROLE_ID=1423698574666891361                # Cargo removido quando aprovado (opcional)
+ALLOWLIST_APPROVED_ROLE_ID=              # Cargo dado quando aprovado
+ALLOWLIST_REMOVE_ROLE_ID=                # Cargo removido quando aprovado (opcional)
 
 ################################################################################
 # 🌐 CONECTAR AO SERVIDOR (painel de status do RedM)
 ################################################################################
-CONNECT_URL=https://cfx.re/join/ep67ba                      # URL direta de conexão (usada no comando /connect)
-CFX_JOIN_CODE=ep67ba                                        # Código do servidor (após /join/)
-CONNECT_PANEL_CHANNEL_ID=1423698575845753007                # Canal onde fica o painel de “Conectar”
+CONNECT_URL=                      # URL direta de conexão (usada no comando /connect)
+CFX_JOIN_CODE=                                        # Código do servidor (após /join/)
+CONNECT_PANEL_CHANNEL_ID=                # Canal onde fica o painel de “Conectar”
 CONNECT_REFRESH_SEC=60                                      # Intervalo (segundos) para atualizar o painel
 PIN_INSTALLED_MESSAGES=false                                # true: fixa as mensagens dos painéis automaticamente
 
 ################################################################################
 # 🧾 TICKETS (suporte / doações / denúncias)
 ################################################################################
-TICKET_PANEL_CHANNEL_ID=1423698576906915933                 # Canal onde o painel de tickets é publicado
+TICKET_PANEL_CHANNEL_ID=                 # Canal onde o painel de tickets é publicado
 
 # Categorias (tickets abertos são criados dentro delas)
-TICKET_CATEGORY_SUPPORT_ID=1423698577342988290              # Categoria: Suporte
-TICKET_CATEGORY_DONATIONS_ID=1423698577342988291            # Categoria: Doações
-TICKET_CATEGORY_REPORTS_ID=1423698577342988292              # Categoria: Denúncias
+TICKET_CATEGORY_SUPPORT_ID=              # Categoria: Suporte
+TICKET_CATEGORY_DONATIONS_ID=            # Categoria: Doações
+TICKET_CATEGORY_REPORTS_ID=              # Categoria: Denúncias
 
 # Configurações gerais dos tickets
-TICKET_STAFF_ROLE_ID=1423698574784598101                    # Cargo da equipe (acessa todos os tickets)
-TICKET_LOG_CHANNEL_ID=1423698577342988297                   # Canal de logs (criação/fechamento/transcrições)
+TICKET_STAFF_ROLE_ID=                    # Cargo da equipe (acessa todos os tickets)
+TICKET_LOG_CHANNEL_ID=                   # Canal de logs (criação/fechamento/transcrições)
 TICKET_BRAND_ICON=https://link-da-sua-logo.png               # Ícone opcional para embeds
 TICKET_BANNER=https://link-de-uma-imagem-horizontal.png      # Banner opcional no topo das embeds
 TICKET_DELETE_DELAY_MS=0                                    # Tempo em ms para apagar ticket após fechar (0 = imediato)
@@ -51,15 +51,15 @@ TICKET_DELETE_DELAY_MS=0                                    # Tempo em ms para a
 ################################################################################
 # 🧍‍♂️ VERIFICAÇÃO (CAPTCHA e cargos automáticos)
 ################################################################################
-VERIFICATION_CHANNEL_ID=1423698575388442722                 # Canal onde fica o painel do CAPTCHA
-VERIFIED_ROLE_ID=1423698574666891361                        # Cargo que será adicionado quando verificado
-UNVERIFIED_ROLE_ID=1423698574666891362                      # Cargo que será removido ao verificar (opcional)
+VERIFICATION_CHANNEL_ID=                 # Canal onde fica o painel do CAPTCHA
+VERIFIED_ROLE_ID=                        # Cargo que será adicionado quando verificado
+UNVERIFIED_ROLE_ID=                      # Cargo que será removido ao verificar (opcional)
 
 ################################################################################
 # 🎟️ AUTOROLE (ao entrar no servidor)
 ################################################################################
-AUTO_ROLE_ID=1423698574666891362                            # Cargo atribuído automaticamente a quem entra
-AUTO_ROLE_WELCOME_CHANNEL_ID=1423698575388442721            # Canal para mensagem de boas-vindas (opcional)
+AUTO_ROLE_ID=                            # Cargo atribuído automaticamente a quem entra
+AUTO_ROLE_WELCOME_CHANNEL_ID=            # Canal para mensagem de boas-vindas (opcional)
 AUTO_ROLE_WELCOME_MESSAGE=Bem-vindo(a), {user}!             # Mensagem enviada ao entrar ({user} = menção do novo membro)
 
 ################################################################################
